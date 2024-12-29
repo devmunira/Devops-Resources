@@ -1,2 +1,4 @@
 # GFG-Devops30
 GFG-Devops30 Class Repo
+
+* Share your valuable session feedback here - http://mydevops30bucket.s3-website.ap-south-1.amazonaws.com/feedback.html
