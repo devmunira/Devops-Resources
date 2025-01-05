@@ -12,3 +12,4 @@
 * Allow only specific VPC endpoints or IP addresses to access my Amazon S3 bucket - `https://repost.aws/knowledge-center/block-s3-traffic-vpc-ip`
 * AWS CLI Document - `https://docs.aws.amazon.com/cli/latest/reference/ec2/run-instances.html`
 * AWS Policy Generator - `https://awspolicygen.s3.amazonaws.com/policygen.html`
+* AWS ALB Routing Rules - ![ALB Routing Rule](ALB-Routing-Rules.png)
