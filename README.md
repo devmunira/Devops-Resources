@@ -5,4 +5,4 @@ GFG-Devops30 Class Repo
 * WhatsApp Group Link - https://chat.whatsapp.com/Li28xwnJ4dP14fxF1nv9cs
 * My DockerHub Repository- https://hub.docker.com/repositories/jinny1
 * Setting up a VM(Virtual Machine) on VirtualBox - https://www.youtube.com/watch?v=Rrci67XqH8s
-* Mario Game Being containerized- https://github.com/sudhanshuvlog/MarioGameOnDocker
+* Mario Game Repo With Dockerfile & Code - https://github.com/sudhanshuvlog/MarioGameOnDocker
