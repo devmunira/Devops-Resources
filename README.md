@@ -6,3 +6,4 @@ GFG-Devops30 Class Repo
 * My DockerHub Repository- https://hub.docker.com/repositories/jinny1
 * Setting up a VM(Virtual Machine) on VirtualBox - https://www.youtube.com/watch?v=Rrci67XqH8s
 * Mario Game Repo With Dockerfile & Code - https://github.com/sudhanshuvlog/MarioGameOnDocker
+* Ever wondered why Docker is lightning-fast? Let’s Prove it!🐋 - https://medium.com/@pandeysudhanshuup/ever-wondered-why-docker-is-lightning-fast-lets-prove-it-2a06377d768c
