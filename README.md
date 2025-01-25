@@ -6,3 +6,4 @@ GFG-Devops30 Class Repo
 * My DockerHub Repository- https://hub.docker.com/repositories/jinny1
 * Setting up a VM(Virtual Machine) on VirtualBox - https://www.youtube.com/watch?v=Rrci67XqH8s
 * Mario Game Repo With Dockerfile & Code - https://github.com/sudhanshuvlog/MarioGameOnDocker
+* Python Flask App CI-CD Pipeline(Used in the class) - https://github.com/sudhanshuvlog/PythonFlaskApp-Devops30/tree/main
