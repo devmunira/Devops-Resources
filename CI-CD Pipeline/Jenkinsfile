@@ -1,0 +1,46 @@
+pipeline {
+    agent {
+        label 'ec2'
+    }
+
+    stages {
+        stage('Download the source code') { //stage == job
+            steps {
+                git branch: 'main', url: 'https://github.com/sudhanshuvlog/PythonFlaskApp-Devops30.git'
+            }
+        }
+        stage('Install Python'){
+            steps{
+              sh 'yum install python3 -y'  
+            }
+        }
+        stage('Install flake8 and pip3'){
+            steps{
+                sh 'yum install python3-pip -y'
+                sh 'pip3 install flake8'
+                sh 'flake8 .'
+            }
+        }
+        stage('Install python dependencies'){
+            steps{
+                sh 'pip3 install -r requirements.txt'
+            }
+        }
+        stage('Execute unit test cases'){
+            steps{
+                sh 'pytest'
+            }
+        }
+        stage('Build Docker Image'){
+            steps{
+                sh 'docker build -t gfgimg:v1 .'
+            }
+        }
+        stage('Deployment'){
+            steps{
+                sh 'docker rm -f webos'
+                sh 'docker run -dit --name webos -p 80:80 gfgimg:v1'
+            }
+        }
+    }
+}

@@ -9,13 +9,14 @@ pwd
 yum install python3-pip -y
 pip3 install flake8
 flake8 .
-yum install python3-pip -y
 pip3 install -r requirements.txt
 pytest
 ```
 ## Job2-docker-build
 
 ```bash
+yum install docker -y
+systemctl start docker
 docker build -t gfgimg:v1 .
 ```
 
