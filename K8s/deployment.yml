@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: gfg-nginx-deployment
+  labels:
+    app: nginx
+spec:
+  replicas: 2 #no of replicas - desired state
+  selector:
+    matchLabels:
+      app: nginx
+  template: #pod template
+    metadata:
+      labels:
+        app: nginx
+    spec:
+      containers:
+      - name: httpd
+        image: jinny1/gfgdevops30
+        ports:
+        - containerPort: 80
