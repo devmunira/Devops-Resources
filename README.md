@@ -10,3 +10,4 @@ GFG-Devops30 Class Repo
 * Ever wondered why Docker is lightning-fast? Let’s Prove it!🐋 - https://medium.com/@pandeysudhanshuup/ever-wondered-why-docker-is-lightning-fast-lets-prove-it-2a06377d768c
 * Snake Game Repo With Dockerfile & Jenkinsfile - https://github.com/sudhanshuvlog/SnakeGame/tree/main
 * Movie Streaming App - https://github.com/sudhanshuvlog/Movie-Streaming-App-DevOps
+* K8s MERN App Deployment on EKS Cluster - https://github.com/sudhanshuvlog/K8s-MERN-App-Deployment/tree/main
