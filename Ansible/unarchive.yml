@@ -1,0 +1,7 @@
+- hosts: all
+  tasks:
+    - name: "unarchive"
+      unarchive:
+        src: https://gfg27.s3.ap-south-1.amazonaws.com/fileabcd.zip
+        dest: /
+        remote_src: yes
