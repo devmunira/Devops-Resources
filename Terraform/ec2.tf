@@ -1,5 +1,5 @@
 resource "aws_instance" "web" {
-  ami           = var.image_id
+  ami           = data.aws_ami.amiID.id
   instance_type = var.instanceType
   key_name = aws_key_pair.gfgkey.key_name
   vpc_security_group_ids = [aws_security_group.mysggfg.id]
@@ -7,7 +7,8 @@ resource "aws_instance" "web" {
     Name = "Terraform-ec2"
   }
   subnet_id = aws_subnet.mysubnet1.id
-  count = 0
+  count = 2
+  depends_on= [aws_key_pair.gfgkey]
 }
 
 resource "aws_key_pair" "gfgkey" {
@@ -26,7 +27,27 @@ resource "aws_security_group" "mysggfg" {
     cidr_blocks      = ["0.0.0.0/0"]
   }
  }
+
+ egress{
+    from_port        = 0
+    to_port          = 0
+    protocol         = "-1"
+    cidr_blocks      = ["0.0.0.0/0"]
+ }
   name        = "my-sg"
   description = "Allow inbound traffic"
   vpc_id = aws_vpc.myvpc.id
+}
+
+
+resource "null_resource" "my-gfg-null-resource" {
+  # triggers = {
+  #   always_run = "${timestamp()}"
+  # }
+  triggers = {
+    instance_ids = aws_instance.web[0].id
+  }
+  provisioner "local-exec" {
+    command = "echo hi"
+  }
 }

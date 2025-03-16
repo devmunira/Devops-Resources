@@ -1,9 +1,3 @@
-variable "image_id" {
-  type = string
-  default = "ami-05c179eced2eb9b5b"
-}
-
-
 variable "instanceType"{
     type = string
     default = "t2.micro"
@@ -11,7 +5,7 @@ variable "instanceType"{
 
 variable "allowedPorts"{
     type = list
-    default = [80, 88, 22, 8080, 9090, 81, 443, 3306, 83]
+    default = [80, 88, 22, 8080, 9090, 81, 443, 3306, 83, 9100,3000]
 }
 
 variable "vpcName"{
