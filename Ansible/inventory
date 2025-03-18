@@ -1,0 +1,20 @@
+
+172.31.43.158  ansible_user=ec2-user ansible_ssh_private_key_file=key.pem
+
+
+172.31.43.249  ansible_user=ec2-user ansible_ssh_private_key_file=key.pem
+
+
+172.31.37.48  ansible_user=ec2-user ansible_ssh_private_key_file=key.pem
+
+
+172.31.47.101  ansible_user=ec2-user ansible_ssh_private_key_file=key.pem
+
+
+172.31.36.191  ansible_user=ec2-user ansible_ssh_private_key_file=key.pem
+
+
+172.31.32.229  ansible_user=ec2-user ansible_ssh_private_key_file=key.pem
+
+
+172.31.47.195  ansible_user=ec2-user ansible_ssh_private_key_file=key.pem

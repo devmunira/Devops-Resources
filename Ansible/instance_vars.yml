@@ -1,0 +1,7 @@
+region: ap-south-1
+instance_type: t2.micro
+security_group: default
+aws_ami: ami-0d682f26195e9ec0f
+key_name: ansiblekeynew
+name: Ansible-Ec2
+subnet_id: subnet-0e64ffc947ac8929c
