@@ -30,4 +30,15 @@ scrape_configs:
 
   - job_name: "ec2-server metrics Node Exporter"
     static_configs:
-      - targets: ["35.154.129.99:9100"]
+      - targets: ["13.233.67.147:9100"]
+
+  - job_name: "docker engine"
+    static_configs:
+      - targets: ["13.233.67.147:9323"]
+        labels:
+          region: "mumbai"
+          env: "prod"
+
+  - job_name: "mysql db metrics"
+    static_configs:
+      - targets: ["192.168.49.2:32515"]
